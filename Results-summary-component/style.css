@@ -1,5 +1,18 @@
-* {
+@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+
+*{
     height: max-content;
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+}
+
+
+h, h1, h2{
+    font-size: medium;
+}
+
+p{
+    font-size: small;
 }
 
 body {
@@ -12,9 +25,10 @@ body {
 
 .box {
     display: flex;
-    width: 100vh;
+    width: 400px;
     height: 300px;
     border-radius: 20px;
+    box-shadow: 0px 0px 50px -20px hsl(224, 30%, 27%);
 }
 
 .result-counter {
@@ -24,8 +38,9 @@ body {
     flex-direction: column;
     width: 50%;
     height: 100%;
-    background-color: blue;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 20px;
+    color: aliceblue;
 }
 
 .counter {
@@ -36,11 +51,32 @@ body {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    background-color: aquamarine;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    box-shadow: 0px 0px 10px 0px hsla(256, 72%, 46%, 1);
 }
 
 .summary {
-    width: 70%;
+    width: 50%;
     height: 100%;
-    background-color: aliceblue;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 160px ;
+    height: 30px;
+    background: #675;
+    border-radius: 10px;
 }
